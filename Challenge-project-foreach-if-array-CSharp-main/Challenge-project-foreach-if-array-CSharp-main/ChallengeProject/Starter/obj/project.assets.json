@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\27682\\Desktop\\Challenge-project-foreach-if-array-CSharp-main\\Challenge-project-foreach-if-array-CSharp-main\\ChallengeProject\\Starter\\Starter.csproj",
+      "projectUniqueName": "C:\\Users\\27682\\Desktop\\C#-App-Challenges\\Challenge-project-foreach-if-array-CSharp-main\\Challenge-project-foreach-if-array-CSharp-main\\ChallengeProject\\Starter\\Starter.csproj",
       "projectName": "Starter",
-      "projectPath": "C:\\Users\\27682\\Desktop\\Challenge-project-foreach-if-array-CSharp-main\\Challenge-project-foreach-if-array-CSharp-main\\ChallengeProject\\Starter\\Starter.csproj",
+      "projectPath": "C:\\Users\\27682\\Desktop\\C#-App-Challenges\\Challenge-project-foreach-if-array-CSharp-main\\Challenge-project-foreach-if-array-CSharp-main\\ChallengeProject\\Starter\\Starter.csproj",
       "packagesPath": "C:\\Users\\27682\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\27682\\Desktop\\Challenge-project-foreach-if-array-CSharp-main\\Challenge-project-foreach-if-array-CSharp-main\\ChallengeProject\\Starter\\obj\\",
+      "outputPath": "C:\\Users\\27682\\Desktop\\C#-App-Challenges\\Challenge-project-foreach-if-array-CSharp-main\\Challenge-project-foreach-if-array-CSharp-main\\ChallengeProject\\Starter\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\27682\\AppData\\Roaming\\NuGet\\NuGet.Config"

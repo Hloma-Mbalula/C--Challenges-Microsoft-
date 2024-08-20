@@ -19,8 +19,11 @@ This C# console application is designed to:
     Logan:          91.2    A-
 */
 int examAssignments = 5;
+// An array of student scores 
 
 string[] studentNames = new string[] { "Sophia", "Andrew", "Emma", "Logan" };
+
+// Here we have arrays for students grades 
 
 int[] sophiaScores = new int[] { 90, 86, 87, 98, 100, 94, 90 };
 int[] andrewScores = new int[] { 92, 89, 81, 96, 90, 89 };
@@ -33,7 +36,7 @@ string currentStudentLetterGrade = "";
 
 // display the header row for scores/grades
 Console.Clear();
-Console.WriteLine("Student\t\tGrade\tLetter Grade\n");
+Console.WriteLine("Student\t\tExam Score\t\tOverall Grade\t\tExtra Credit\n");
 
 /*
 The outer foreach loop is used to:
@@ -65,8 +68,11 @@ foreach (string name in studentNames)
 
     int gradedAssignments = 0;
 
+    int examScores = 0;
+    int extraCreditPoints = 0;
+
     /* 
-    the inner foreach loop sums assignment scores
+    the inner foreach loop dosums assignment scores
     extra credit assignments are worth 10% of an exam score
     */
     foreach (int score in studentScores)
@@ -75,6 +81,8 @@ foreach (string name in studentNames)
 
         if (gradedAssignments <= examAssignments)
             sumAssignmentScores += score;
+            
+
 
         else
             sumAssignmentScores += score / 10;

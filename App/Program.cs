@@ -193,6 +193,226 @@ foreach (string name in studentsNames){
     }
 
 
+// ADDING LOGIC TO CONSOLE APPLICATIONS
+
+    // Random coin toss - practising conditional operator
+
+        Random coin = new Random();
+        int flip = coin.Next(0, 2);
+        Console.WriteLine((flip == 0) ? "heads" : "tails");
+
+        // OR
+
+        Random coin = new Random();
+        Console.WriteLine((coin.Next(0, 2) == 0) ? "heads" : "tails");
+
+
+    // DECISION LOGIC CHALLENGE
+
+        string permission = "Admin|Manager";
+        int level = 55;
+
+        if ( permission.Contains("Admin")){
+            if(level > 55){
+                Console.WriteLine("Welcome, Super Admin user.")
+            }else{
+                Console.WriteLine("Welcome, Admin user.")
+            }
+
+        }elseif (permission.Contains("Manager")){
+            if(level >= 20){
+                Console.WriteLine("Contact an Admin for access.")
+            }else{
+                Console.WriteLine("You do not have sufficient priviledges")
+            }
+        }else(
+                Console.WriteLine("You do not have sufficient priviledges")
+            )
+// Variable scope challenge
+
+int[] numbers = { 4, 8, 15, 16, 23, 42 };
+
+foreach ( int number in numbers )
+    int total;
+    total += number;
+    if ( number == 42 )
+        bool found = true;
+    
+
+
+if (found)
+    Console.WriteLine("Set contains 42");
+
+Console.WriteLine($"Total: {totals}")
+
+
+// Implementing the switch statement
+
+int employeeLevel = 200;
+string employeeName = "John Smith";
+
+string title = "";
+
+switch (employeeLevel){
+    case 100:
+        title = "Junior Associate";
+        break;
+    case 200:
+        title = "Senior Associate";
+        break;
+    case 300:
+        title = "Manager";
+        break;
+    case 400:
+        title = "Senior Manager";
+        break;
+    default:
+        title = "Associate";
+        break;
+
+}
+Console.WriteLine($"{employeeName}, {title}");
+
+// Using the for loop 
+
+for (int i = 0; i < 10; i++){
+    Console.WriteLine(i)
+}
+    // loop through each element of an array
+
+    string[] names = { "Alex", "Eddie", "David", "Michael" };
+    for (int i = names.Length - 1; i >= 0;  i--){
+        Console.WriteLine(names[i]);
+    }
+
+// FizzBuzz challenge
+
+for (int i = 0; i <= 100; i++)
+    if(i % 3 == 0 && i  % 5 == 0)
+        Console.WriteLine($"{i} - FizzBuzz");
+    elseif(i % 3 == 0)
+        Console.WriteLine($"{i} - Fizz");
+    elseif(i % 5 == 0)
+        Console.WriteLine($"{i} - Buzz");
+    else
+        Console.WriteLine(i);
+
+// do-while
+
+// This loop will continue to generate random numbers between 1, 10 as long the number is not 7. If its 7, it breaks
+
+Random random = new Random();
+int current = 0;
+ 
+do{
+    current = random.Next(1, 11);
+    Console.WriteLine(current);
+
+} while ( current != 7 );
+
+
+
+// while loop
+
+Random random = new Random();
+int current = random.Next(1, 11);
+
+while (current >= 3){
+    Console.WriteLine(current);
+    current = random.Next(1, 11);
+
+}
+
+// Role Playing game battle challenge
+
+int hero = 10;
+int monster = 10;
+
+Random random = new Random();
+
+do{
+    int roll = random.Next(1, 11);
+    monster -= roll;
+    Console.WriteLine($"Monster was damaged and lost {roll} and now has {monster} health.");
+
+    if ( monster <= 0 ) continue;
+
+    roll = random.Next(1, 11);
+    hero -= roll;
+    Console.WriteLine($"Hero was damaged and lost {roll} health and now has {hero} health.");
+} while ( hero > 0 && monster > 0);
+
+Console.WriteLine( hero > monster ? "Hero wins!" : "Monster wins!" );
+
+
+// PROJECT 1
+
+// Differentiate between do and while statements
+// Validate user input
+
+int value?;
+bool validEntry = false;
+Console.WriteLine("Enter a number between 5 and 10")
+
+do{
+    value = Console.ReadLine():
+    if( value != null)
+        if ( ( value >= 5 ) && ( value <= 10 ) )
+            validEntry = true;
+            Console.WriteLine($"Your input value ({value}) has been accepted")
+        else 
+                Console.WriteLine("Your input is incorrect, make sure you enter a value between 5 and 10");
+}while (validEntry == false);
+
+
+// PROJECT 2 
+// Validate a string
+
+string? readResult;
+string roleName = "";
+bool validEntry = false;
+
+do{
+    Console.WriteLine("Enter your role name (Administrator, Manager, or User)");
+    readResult = Console.ReadLine();
+
+    if ( readResult != null ){
+        roleName = readResult.Trim();
+    }
+
+    if (roleName.ToLower() == "administrator" || roleName.ToLower() == "manager" || roleName.ToLower() == "user") 
+    {
+        validEntry = true;
+    }
+    else
+    {
+        Console.Write($"The role name that you entered, \"{roleName}\" is not valid. ");
+    }
+}while (validEntry == false);
+
+Console.WriteLine($"Your input value ({roleName}) has been accepted.");
+readResult = Console.ReadLine();
+    
+
+
+// PROJECT 3
+// Process a string array 
+
+
+string[] myStrings = new string[2] { "I like pizza. I like roast chicken. I like salad", "I like all three of the menu choices" };
+
+int periodLocation;
+
+for ( int myString = 0; myString < myStrings.Length - 1; myString++ )
+    int period = myString.indexOf(".");
+    if ( period != null )
+        Console.WriteLine(period);
+    else   
+        Console.WriteLine(-1);
+
+    
+
+
 Console.WriteLine("Press the enter key to continue");
 Console.ReadLine()
 
